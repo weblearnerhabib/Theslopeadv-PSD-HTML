@@ -487,6 +487,7 @@
     position: relative;
     padding: 15rem 0 10rem;
     background-color: #00519b;
+    z-index: 1;
     @include xl-up {
         padding: 20rem 0 15rem;
     }
@@ -521,11 +522,26 @@
                 font-weight: 600;
             }
         }
-
+        .icon {
+            display: none;
+        }
+        &.animated {
+            .icon {
+                display: block;
+            }
+        }
         svg {
             position: absolute;
             inset: 0;
             width: 100%;
+            top: -3rem;
+
+            path {
+                stroke-dasharray: 1;
+                stroke-dashoffset: 2;
+                animation: lineanimation 1s cubic-bezier(0.4, 0, 0.2, 1)  alternate ;
+            }
+
         }
     }
     .footer-shape {
@@ -534,5 +550,6 @@
         z-index: 1;
         overflow: hidden;
         background: url(../images/animated-wave.svg) left top no-repeat;
+        z-index: -1;
     }
 }

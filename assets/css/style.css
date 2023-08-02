@@ -984,6 +984,7 @@ footer .footer-bottom p {
   position: relative;
   padding: 15rem 0 10rem;
   background-color: #00519b;
+  z-index: 1;
 }
 @media screen and (min-width: 1200px) {
   .contact-us {
@@ -1022,10 +1023,22 @@ footer .footer-bottom p {
     font-weight: 600;
   }
 }
+.contact-us .cta-btn .icon {
+  display: none;
+}
+.contact-us .cta-btn.animated .icon {
+  display: block;
+}
 .contact-us .cta-btn svg {
   position: absolute;
   inset: 0;
   width: 100%;
+  top: -3rem;
+}
+.contact-us .cta-btn svg path {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 2;
+  animation: lineanimation 1s cubic-bezier(0.4, 0, 0.2, 1) alternate;
 }
 .contact-us .footer-shape {
   position: absolute;
@@ -1033,6 +1046,7 @@ footer .footer-bottom p {
   z-index: 1;
   overflow: hidden;
   background: url(../images/animated-wave.svg) left top no-repeat;
+  z-index: -1;
 }
 
 /*# sourceMappingURL=style.css.map */
