@@ -1,0 +1,106 @@
+// Clearfix
+@mixin clearfix() {
+	content: "";
+	display: table;
+}
+
+// Clear after (not all clearfix need this also)
+@mixin clearfix-after() {
+	clear: both;
+}
+
+//display div as a table
+@mixin table_display {
+    display: table-cell;
+    vertical-align: top;
+}
+
+@mixin xxl-down {
+    @media screen and (max-width: 1399px) {
+        @content;
+    } 
+}
+@mixin xl-down {
+    @media screen and (max-width: 1199px) {
+        @content;
+    } 
+}
+@mixin lg-down {
+    @media screen and (max-width: 991px) {
+        @content;
+    } 
+}
+@mixin md-down {
+    @media screen and (max-width: 767px) {
+        @content;
+    } 
+}
+@mixin sm-down {
+    @media screen and (max-width: 575px) {
+        @content;
+    } 
+}
+@mixin xs-down {
+    @media screen and (max-width: 479px) {
+        @content;
+    } 
+}
+@mixin xs-up {
+    @media screen and (min-width: 480px) {
+        @content;
+    } 
+}
+@mixin sm-up {
+    @media screen and (min-width: 576px) {
+        @content;
+    }
+}
+@mixin md-up {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+@mixin lg-up {
+    @media screen and (min-width: 992px) {
+        @content;
+    }
+}
+@mixin tab-up {
+    @media screen and (min-width: 1024px) {
+        @content;
+    }
+}
+@mixin xl-up {
+    @media screen and (min-width: 1200px) {
+        @content;
+    }
+}
+@mixin xxl-up {
+    @media screen and (min-width: 1400px) {
+        @content;
+    }
+}
+@mixin xxxl-up {
+    @media screen and (min-width: 1900px) {
+        @content;
+    }
+}
+
+// Center block
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+// Display Inline Block and align Center
+@mixin inline-flex-center {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+// With and Height
+@mixin width-height($width, $height) {
+    width: $width;
+    height: $height;
+}

@@ -1,0 +1,15 @@
+@keyframes preloader_spin {
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+@keyframes lineanimation {
+  0% {
+      stroke-dashoffset: 1;
+  }
+
+  100% {
+      stroke-dashoffset: 0;
+  }
+}

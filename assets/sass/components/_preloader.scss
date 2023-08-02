@@ -1,0 +1,20 @@
+.preloader {
+    @include flex-center;
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+    background-color: var(--color__white);
+
+    .preloader_circle {
+        height: 7rem;
+        width: 7rem;
+        animation: preloader_spin .8s ease infinite;
+        border-radius: 9999px;
+        border: 4px solid;
+        border-color: transparent;
+        border-top-color: var(--color__green);
+        border-bottom-color: var(--color__green);
+    }
+}
+
+

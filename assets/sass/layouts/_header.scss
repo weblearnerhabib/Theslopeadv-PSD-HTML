@@ -1,0 +1,59 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1024;
+    transition: all .3s ease;
+    &.sticky {
+        background-color: #7ba3d5;
+    }
+    .navbar {
+        height: 10rem;
+    }
+    .navbar-brand {
+        @include md-down {
+            max-width: 12rem;
+        }
+        @include md-up {
+            max-width: 15rem;
+        }
+        @include xxl-up {
+            max-width: 18rem;
+        }
+    }
+    .dropdown-menu {
+        border: 0;
+        width: 18rem ;
+        padding: 1.5rem 2rem;
+
+        li {
+            a {
+                font-size: 1.8rem;
+                transition: all .2s ease;
+                font-family: 'Myriad Pro Bold';
+                &.active , &:hover {
+                    color: var(--color__orange);
+                }
+            }
+            & + li {
+                margin-top: .8rem;
+            }
+        }
+    }
+    .menu_button {
+        background-color: rgba(#fff, .3);
+        border: 0;
+        padding: 1rem 2rem;
+        border-radius: 4rem;
+        color: var(--color__white);
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        
+        @include md-up {
+            padding: 1.5rem 4rem;
+        }
+    }
+}

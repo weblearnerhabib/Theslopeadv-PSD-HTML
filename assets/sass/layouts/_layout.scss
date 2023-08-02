@@ -1,0 +1,46 @@
+.container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    @include sm-up {
+        max-width: 570px;
+    }
+
+    @include md-up {
+        max-width: 780px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    @include lg-up {
+        max-width: 1024px;
+    }
+    @include xl-up {
+        max-width: 1200px;
+    }
+    @include xxl-up {
+        max-width: 1380px;
+    }
+    @include xxxl-up {
+        max-width: 1600px;
+    }
+}
+
+
+@media screen and (min-width: 1920px) {
+    .container {
+        max-width: 1560px;
+    }
+}
+/*--------------------------------------------------------------
+    [ ## Header ]
+--------------------------------------------------------------*/
+@import "header";
+
+/*--------------------------------------------------------------
+    [ ## Page Banner]
+--------------------------------------------------------------*/
+@import "page-banner";
+
+/*--------------------------------------------------------------
+    [ ## Footer ]
+--------------------------------------------------------------*/
+@import "footer";

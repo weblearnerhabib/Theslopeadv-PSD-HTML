@@ -1,0 +1,61 @@
+html {
+	font-size: 54%;
+	-webkit-text-size-adjust: 100%;
+
+	@include md-up {
+		font-size: 58%;
+	}	
+	@include lg-up {
+		font-size: 60%;
+	}	
+	@include xl-up {
+		font-size: 62.5%;
+	}	
+	@include xxxl-up {
+		font-size: 70%;
+	}
+	@media (min-width: 3000px) {
+		font-size: 80%;
+	}
+	@media (min-width: 3800px) {
+		font-size: 90%;
+	}
+}
+body {
+	font-family: 'Myriad Pro Regular';
+	font-size: 1.6rem;
+}
+p { 
+	font-size: 1.6rem;
+	line-height: 1.75;
+	margin: 0;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+ul, ol {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	li {
+		font-size: 1.6rem;
+	}
+}
+a {
+	color: inherit;
+	text-decoration: none;
+	font-size: 1.6rem;
+
+	&:hover {
+		color: inherit;
+		text-decoration: none;
+	}
+}
+
+@import 'headings';
+@import 'helpers';
+@import 'section-title';
+

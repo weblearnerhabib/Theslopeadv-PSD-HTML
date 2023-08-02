@@ -1,0 +1,24 @@
+.topbutton {
+    position: fixed;
+    right: 2rem;
+    bottom: 4rem;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 1rem;
+    @include flex-center;
+    color: var(--color__white);
+    z-index: 1024;
+    background-color: #000;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+
+    &:hover {
+        color: var(--color__white);
+    }
+    &.btn-show {
+        opacity: 1;
+        visibility: visible;
+        bottom: 3rem;
+    }
+}
